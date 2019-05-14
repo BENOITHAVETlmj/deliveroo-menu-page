@@ -13,6 +13,7 @@ class App extends React.Component {
   };
 
   handleclick = item => {
+    //Recuperation de mon evenement onClick on item (meal dans Meal), on cherche dans une copie du tableau par son index
     const newBasket = [...this.state.basket];
     const index = newBasket.indexOf(item);
     if (index < 0) {

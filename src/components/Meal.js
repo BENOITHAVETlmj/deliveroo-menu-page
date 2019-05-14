@@ -17,7 +17,7 @@ const Meal = props => {
               (meal = {
                 quantity: 1,
                 title: meal.title,
-                price: meal.price
+                price: Number(meal.price)
               })
               // on envoie un Nouvel objet meal avec ces trois propriétées
             );

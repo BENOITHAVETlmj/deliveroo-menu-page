@@ -7,10 +7,12 @@ const Basket = props => {
       <button className="button-basket">valider mon panier</button>
       {basket.map((meal, index) => {
         return (
-          <div key={index}>
+          <div className="order" key={index}>
+            <i className="fas fa-plus-circle" />
             <span>{meal.quantity}</span>
-            <span>{meal.title}</span>
-            <span>{meal.quantity}</span>
+            <i className="fas fa-minus-circle" />
+            <span className="title-product-basket">{meal.title}</span>
+            <span>{meal.price + "\u20AC"} </span>
           </div>
         );
       })}

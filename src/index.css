@@ -146,7 +146,7 @@ h2 {
   background-color: #fff;
   margin-top: 30px;
   margin-left: 10px;
-  height: 230px;
+  height: auto;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -177,4 +177,27 @@ h2 {
   font-size: 16px;
   text-align: center;
   padding-top: 70px;
+}
+
+/* Basket */
+
+.order {
+  display: flex;
+  margin: 20px 5px 5px 5px;
+}
+.fa-plus-circle {
+  margin-right: 10px;
+  color: #00ccbc;
+}
+
+.fa-minus-circle {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #00ccbc;
+}
+.title-product-basket {
+  flex: 1;
+}
+.title-product-basket {
+  font-family: var(--deliveroo-content);
 }
