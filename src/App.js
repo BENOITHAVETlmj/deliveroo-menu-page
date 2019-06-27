@@ -71,18 +71,18 @@ class App extends React.Component {
     }
 
     return (
-      <div>
-        <div className="top-band">
+      <div className="container">
+        <section className="top-band">
           <div className="container">
             <img className="logo-top" src={logo} alt="deliveroo logo" />
           </div>
-        </div>
+        </section>
 
-        <div className="container">
+        <section className="header">
           <Header restosMenu={this.state.restosMenu} />
-        </div>
+        </section>
 
-        <div className="menu-cards">
+        <section className="menu-cards">
           <div className="container-main">
             <div className="container3">
               <Content
@@ -103,7 +103,7 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     );
   }

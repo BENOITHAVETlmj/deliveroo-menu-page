@@ -24,7 +24,7 @@ const Meal = props => {
 
             {meal.description ? (
               <LinesEllipsis
-                className="description"
+                className="description-elips"
                 text={meal.description}
                 maxLine="3"
                 ellipsis="..."
