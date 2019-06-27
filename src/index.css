@@ -144,22 +144,28 @@ h2 {
 }
 .basket {
   background-color: #fff;
-  margin-top: 30px;
   margin-left: 10px;
   height: auto;
   display: flex;
   flex-direction: row;
   position: fixed;
-  bottom: 1;
-  right: 220px;
+  bottom: 20px;
+  right: 50px;
+  box-sizing: border-box;
 }
 /* button Basket */
 
 .button-main {
-  margin: 10px 10px 50px 10px;
+  margin: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
 }
+.button-main .order {
+  margin: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 .button-basket {
   width: 360px;
   height: 50px;
@@ -186,18 +192,37 @@ h2 {
   margin: 20px 5px 5px 5px;
 }
 .fa-plus-circle {
-  margin-right: 10px;
+  margin-right: 5px;
   color: #00ccbc;
 }
 
 .fa-minus-circle {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   color: #00ccbc;
 }
-.title-product-basket {
-  flex: 1;
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
 }
-.title-product-basket {
-  font-family: var(--deliveroo-content);
+.subs {
+  padding: 8px;
+}
+.subs .subtotal {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 10px 0px;
+}
+.subs .delivery {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 10px 0px;
+}
+.subs .total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
 }

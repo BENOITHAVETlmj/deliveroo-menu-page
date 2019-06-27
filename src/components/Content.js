@@ -19,7 +19,7 @@ const Content = props => {
 
     //deuxieme tour de boucle pour creer les elements title, description, price et picture
     return (
-      // On met la valeur index en key dans la div parente pour obtenrir une key unique de nos éléments
+      // On met la valeur index en key dans la div parente pour obtenir une key unique de nos éléments
       <div key={index}>
         <div>
           {/* return de chaque élément */}

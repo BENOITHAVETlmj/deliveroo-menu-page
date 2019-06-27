@@ -2,25 +2,20 @@ import React from "react";
 import LinesEllipsis from "react-lines-ellipsis";
 
 const Meal = props => {
-  const { menuContent } = props; // destructuring de props.menuContent
+  const { menuContent, onAddItem } = props; // destructuring de props.menuContent
+  // console.log(menuContent);
 
   const meal =
     menuContent &&
     menuContent.map(meal => {
       return (
-        // deuxieme tour de boucle pour obtenir mes plats
+        // Si il y a un menuContent, on map le menu pour trouver le meal "clické" par son Id
         <div
           className="all"
           key={meal.id}
           onClick={() => {
-            props.onAddItem(
-              (meal = {
-                quantity: 1,
-                title: meal.title,
-                price: Number(meal.price)
-              })
-              // on envoie un Nouvel objet meal avec ces trois propriétées
-            );
+            // on passe en argument les 3 clés que l'on récupérer lors du click
+            onAddItem(meal.id, meal.title, meal.price);
           }}
         >
           {/* key dans la div parente pour avoir accès a tous nos objets tous nos objets */}
